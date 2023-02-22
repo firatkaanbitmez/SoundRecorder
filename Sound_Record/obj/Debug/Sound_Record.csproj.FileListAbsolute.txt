@@ -1,0 +1,14 @@
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Sound_Record.exe.config
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Sound_Record.exe
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Sound_Record.pdb
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.Core.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.Wasapi.dll
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.csproj.AssemblyReference.cache
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.csproj.SuggestedBindingRedirects.cache
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.Form1.resources
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.Properties.Resources.resources
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.csproj.GenerateResource.cache
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.csproj.CoreCompileInputs.cache
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.csproj.CopyComplete
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.exe
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.pdb
