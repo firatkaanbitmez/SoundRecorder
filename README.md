@@ -1,4 +1,6 @@
 # SoundRecorder
 
-![Screenshot 2023-03-03 224148](https://user-images.githubusercontent.com/74864221/222811917-81aa1884-f84b-46cc-bf58-dec23c979997.png)
-![Screenshot 2023-03-03 224206](https://user-images.githubusercontent.com/74864221/222811919-b615a3d5-dd92-4f27-89f9-eff3d017433f.png)
+![Screenshot 2023-03-05 132933](https://user-images.githubusercontent.com/74864221/222955129-2c96f375-5042-4983-b36e-30f312a5c241.png)
+![Screenshot 2023-03-05 132958](https://user-images.githubusercontent.com/74864221/222955130-9f334a2e-cdf0-49aa-a386-6167733a34d8.png)
+![Screenshot 2023-03-05 133018](https://user-images.githubusercontent.com/74864221/222955131-efd8efdb-2b9a-45ed-9b93-7291306f53c4.png)
+![Screenshot 2023-03-05 133033](https://user-images.githubusercontent.com/74864221/222955132-7444e640-48a9-454e-b519-aa79f3387f8c.png)
