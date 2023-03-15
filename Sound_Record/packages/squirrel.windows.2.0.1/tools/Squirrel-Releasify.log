@@ -1,0 +1,72 @@
+﻿[15.03.23 13:56:50] ınfo: Program: Starting Squirrel Updater: -releasify Sound_Record.2.0.0.nupkg
+[15.03.23 13:56:50] ınfo: Program: Bootstrapper EXE found at:C:\Users\FIRAT\Desktop\Sound_Record\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[15.03.23 13:56:50] fatal: Finished with unhandled exception: System.IO.FileNotFoundException: Could not find file 'Sound_Record.2.0.0.nupkg'.
+File name: 'Sound_Record.2.0.0.nupkg'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at Squirrel.Update.Program.Releasify(String package, String targetDir, String packagesDir, String bootstrapperExe, String backgroundGif, String signingOpts, String baseUrl, String setupIcon, Boolean generateMsi, Boolean packageAs64Bit, String frameworkVersion, Boolean generateDeltas)
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+[15.03.23 13:57:09] ınfo: Program: Starting Squirrel Updater: --releasify Sound_Record.2.0.0.nupkg
+[15.03.23 13:57:09] ınfo: Program: Bootstrapper EXE found at:C:\Users\FIRAT\Desktop\Sound_Record\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[15.03.23 13:57:09] fatal: Finished with unhandled exception: System.IO.FileNotFoundException: Could not find file 'Sound_Record.2.0.0.nupkg'.
+File name: 'Sound_Record.2.0.0.nupkg'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at Squirrel.Update.Program.Releasify(String package, String targetDir, String packagesDir, String bootstrapperExe, String backgroundGif, String signingOpts, String baseUrl, String setupIcon, Boolean generateMsi, Boolean packageAs64Bit, String frameworkVersion, Boolean generateDeltas)
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+[15.03.23 13:57:45] ınfo: Program: Starting Squirrel Updater: -releasify Sound_Record.2.0.0.nupkg
+[15.03.23 13:57:45] ınfo: Program: Bootstrapper EXE found at:C:\Users\FIRAT\Desktop\Sound_Record\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[15.03.23 13:57:45] ınfo: Program: Creating release package: C:\Users\FIRAT\Desktop\Sound_Record\Releases\Sound_Record.2.0.0.nupkg
+[15.03.23 13:57:45] ınfo: ReleasePackage: Creating release package: C:\Users\FIRAT\Desktop\Sound_Record\Releases\Sound_Record.2.0.0.nupkg => C:\Users\FIRAT\Desktop\Sound_Record\Releases\Sound_Record-2.0.0-full.nupkg
+[15.03.23 13:57:45] ınfo: ReleasePackage: Extracting dependent packages: []
+[15.03.23 13:57:45] ınfo: ReleasePackage: Removing unnecessary data
+[15.03.23 13:57:45] ınfo: ReleasePackage: No release notes found in C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempa\Sound_Record.nuspec
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: Extracting .\Releases\Sound_Record-1.1.1-full.nupkg and C:\Users\FIRAT\Desktop\Sound_Record\Releases\Sound_Record-2.0.0-full.nupkg into C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempb
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\DeltaCompressionDotNet.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\DeltaCompressionDotNet.MsDelta.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\DeltaCompressionDotNet.PatchApi.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\icons8_fiber_smart_record_2.ico not found in base package, marking as new
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\icons8_fiber_smart_record_64px.png hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\Microsoft.Win32.Registry.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: Delta patching C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempa\lib\net45\Mono.Cecil.dll => C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempb\lib\net45\Mono.Cecil.dll
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: Delta patching C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempa\lib\net45\Mono.Cecil.Mdb.dll => C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempb\lib\net45\Mono.Cecil.Mdb.dll
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: Delta patching C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempa\lib\net45\Mono.Cecil.Pdb.dll => C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempb\lib\net45\Mono.Cecil.Pdb.dll
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: Delta patching C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempa\lib\net45\Mono.Cecil.Rocks.dll => C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempb\lib\net45\Mono.Cecil.Rocks.dll
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\NAudio.Asio.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\NAudio.Core.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\NAudio.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\NAudio.Midi.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\NAudio.Wasapi.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\NAudio.WinForms.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\NAudio.WinMM.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\NuGet.Squirrel.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: \lib\net45\SharpCompress.dll hasn't changed, writing dummy file
+[15.03.23 13:57:46] ınfo: DeltaPackageBuilder: Delta patching C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempa\lib\net45\Sound Recorder.exe => C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempb\lib\net45\Sound Recorder.exe
+[15.03.23 13:57:47] ınfo: DeltaPackageBuilder: Delta patching C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempa\lib\net45\Sound Recorder.exe.config => C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempb\lib\net45\Sound Recorder.exe.config
+[15.03.23 13:57:47] ınfo: DeltaPackageBuilder: Delta patching C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempa\lib\net45\Sound Recorder_ExecutionStub.exe => C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempb\lib\net45\Sound Recorder_ExecutionStub.exe
+[15.03.23 13:57:47] ınfo: DeltaPackageBuilder: \lib\net45\Squirrel.dll hasn't changed, writing dummy file
+[15.03.23 13:57:47] ınfo: DeltaPackageBuilder: \lib\net45\System.Security.AccessControl.dll hasn't changed, writing dummy file
+[15.03.23 13:57:47] ınfo: DeltaPackageBuilder: \lib\net45\System.Security.Principal.Windows.dll hasn't changed, writing dummy file
+[15.03.23 13:57:47] ınfo: DeltaPackageBuilder: Delta patching C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempa\lib\net45\tr-TR\Sound Recorder.resources.dll => C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempb\lib\net45\tr-TR\Sound Recorder.resources.dll
+[15.03.23 13:57:47] ınfo: Program: Building embedded zip file for Setup.exe
+[15.03.23 13:57:49] ınfo: Program: Finished Squirrel Updater
+[15.03.23 14:05:33] ınfo: Program: Starting Squirrel Updater: -releasify Sound_Record.2.0.0.nupkg
+[15.03.23 14:05:33] ınfo: Program: Bootstrapper EXE found at:C:\Users\FIRAT\Desktop\Sound_Record\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[15.03.23 14:05:33] ınfo: Program: Creating release package: C:\Users\FIRAT\Desktop\Sound_Record\Releases\Sound_Record.2.0.0.nupkg
+[15.03.23 14:05:33] ınfo: ReleasePackage: Creating release package: C:\Users\FIRAT\Desktop\Sound_Record\Releases\Sound_Record.2.0.0.nupkg => C:\Users\FIRAT\Desktop\Sound_Record\Releases\Sound_Record-2.0.0-full.nupkg
+[15.03.23 14:05:33] ınfo: ReleasePackage: Extracting dependent packages: []
+[15.03.23 14:05:33] ınfo: ReleasePackage: Removing unnecessary data
+[15.03.23 14:05:33] ınfo: ReleasePackage: No release notes found in C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempa\Sound_Record.nuspec
+[15.03.23 14:05:33] ınfo: Program: Building embedded zip file for Setup.exe
+[15.03.23 14:05:35] ınfo: Program: Finished Squirrel Updater
+[15.03.23 14:30:08] ınfo: Program: Starting Squirrel Updater: -releasify Sound_Record.2.0.0.nupkg
+[15.03.23 14:30:08] ınfo: Program: Bootstrapper EXE found at:C:\Users\FIRAT\Desktop\Sound_Record\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[15.03.23 14:30:08] ınfo: Program: Creating release package: C:\Users\FIRAT\Desktop\Sound_Record\Releases\Sound_Record.2.0.0.nupkg
+[15.03.23 14:30:08] ınfo: ReleasePackage: Creating release package: C:\Users\FIRAT\Desktop\Sound_Record\Releases\Sound_Record.2.0.0.nupkg => C:\Users\FIRAT\Desktop\Sound_Record\Releases\Sound_Record-2.0.0-full.nupkg
+[15.03.23 14:30:08] ınfo: ReleasePackage: Extracting dependent packages: []
+[15.03.23 14:30:08] ınfo: ReleasePackage: Removing unnecessary data
+[15.03.23 14:30:08] ınfo: ReleasePackage: No release notes found in C:\Users\FIRAT\AppData\Local\SquirrelTemp\tempa\Sound_Record.nuspec
+[15.03.23 14:30:08] ınfo: Program: Building embedded zip file for Setup.exe
+[15.03.23 14:30:10] ınfo: Program: Finished Squirrel Updater
