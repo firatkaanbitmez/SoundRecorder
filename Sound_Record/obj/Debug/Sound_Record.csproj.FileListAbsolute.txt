@@ -92,3 +92,8 @@ C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.frmWelcome
 C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.Forms.frmMain.tr-TR.resources
 C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.frmWelcomeOpening.tr-TR.resources
 C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\tr-TR\Sound Recorder.resources.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\libmp3lame.32.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\libmp3lame.64.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.Lame.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.Lame.pdb
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.Forms.frmUpdateNotify.resources

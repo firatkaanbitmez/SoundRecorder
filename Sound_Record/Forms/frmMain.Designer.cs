@@ -37,14 +37,14 @@
             this.panelUpper = new System.Windows.Forms.Panel();
             this.panelDefaultWall = new System.Windows.Forms.Panel();
             this.panelCustomize = new System.Windows.Forms.Panel();
-            this.progressbar2 = new Sound_Record.progressbar();
-            this.progressbar1 = new Sound_Record.progressbar();
             this.panelUpdate = new System.Windows.Forms.Panel();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.labelOnlineVersion = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.labelCurrentVersion = new System.Windows.Forms.Label();
+            this.progressbar2 = new Sound_Record.progressbar();
+            this.progressbar1 = new Sound_Record.progressbar();
             this.panelAbout = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -53,6 +53,8 @@
             this.comboLanguages = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelSystemSettings = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboVolumeBar = new System.Windows.Forms.ComboBox();
             this.comboDevies = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -185,16 +187,6 @@
             this.panelCustomize.ForeColor = System.Drawing.Color.AliceBlue;
             this.panelCustomize.Name = "panelCustomize";
             // 
-            // progressbar2
-            // 
-            resources.ApplyResources(this.progressbar2, "progressbar2");
-            this.progressbar2.Name = "progressbar2";
-            // 
-            // progressbar1
-            // 
-            resources.ApplyResources(this.progressbar1, "progressbar1");
-            this.progressbar1.Name = "progressbar1";
-            // 
             // panelUpdate
             // 
             resources.ApplyResources(this.panelUpdate, "panelUpdate");
@@ -234,6 +226,16 @@
             // 
             resources.ApplyResources(this.labelCurrentVersion, "labelCurrentVersion");
             this.labelCurrentVersion.Name = "labelCurrentVersion";
+            // 
+            // progressbar2
+            // 
+            resources.ApplyResources(this.progressbar2, "progressbar2");
+            this.progressbar2.Name = "progressbar2";
+            // 
+            // progressbar1
+            // 
+            resources.ApplyResources(this.progressbar1, "progressbar1");
+            this.progressbar1.Name = "progressbar1";
             // 
             // panelAbout
             // 
@@ -299,6 +301,8 @@
             // panelSystemSettings
             // 
             resources.ApplyResources(this.panelSystemSettings, "panelSystemSettings");
+            this.panelSystemSettings.Controls.Add(this.label1);
+            this.panelSystemSettings.Controls.Add(this.comboVolumeBar);
             this.panelSystemSettings.Controls.Add(this.comboDevies);
             this.panelSystemSettings.Controls.Add(this.label4);
             this.panelSystemSettings.Controls.Add(this.label10);
@@ -309,6 +313,26 @@
             this.panelSystemSettings.Controls.Add(this.btnBrowse);
             this.panelSystemSettings.Controls.Add(this.textBox1);
             this.panelSystemSettings.Name = "panelSystemSettings";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label1.Name = "label1";
+            // 
+            // comboVolumeBar
+            // 
+            resources.ApplyResources(this.comboVolumeBar, "comboVolumeBar");
+            this.comboVolumeBar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboVolumeBar.FormattingEnabled = true;
+            this.comboVolumeBar.Items.AddRange(new object[] {
+            resources.GetString("comboVolumeBar.Items"),
+            resources.GetString("comboVolumeBar.Items1"),
+            resources.GetString("comboVolumeBar.Items2"),
+            resources.GetString("comboVolumeBar.Items3")});
+            this.comboVolumeBar.Name = "comboVolumeBar";
+            this.comboVolumeBar.TabStop = false;
+            this.comboVolumeBar.SelectedIndexChanged += new System.EventHandler(this.comboVolumeBar_SelectedIndexChanged);
             // 
             // comboDevies
             // 
@@ -771,5 +795,7 @@
         private System.Windows.Forms.Label labelCurrentVersion;
         private progressbar progressbar2;
         private progressbar progressbar1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboVolumeBar;
     }
 }

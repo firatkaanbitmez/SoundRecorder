@@ -1,4 +1,5 @@
 ﻿using NAudio.CoreAudioApi;
+using NAudio.Lame;
 using NAudio.Wave;
 using Squirrel;
 using System;
@@ -6,7 +7,6 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -38,8 +38,10 @@ namespace Sound_Record.Forms
             InitializeComponent();
             listView1.MouseDown += new MouseEventHandler(listView1_MouseDown);
             listView1.MouseDoubleClick += new MouseEventHandler(listView1_MouseDoubleClick);
-            
-            
+
+            //Green Screen
+            //    this.BackColor = Color.Green;
+            //    this.TransparencyKey=Color.Green;
 
         }
 
@@ -49,17 +51,27 @@ namespace Sound_Record.Forms
             Loading();
 
             AddVersionNumber();         
-            labelTitle.Text = "Sound Recorder " + versionNum;
+            labelTitle.Text = "Sound Recorder ";
             CFU();
+
+            //for (int i = -1; i < NAudio.Wave.WaveIn.DeviceCount; i++)
+            //{
+            //    var caps = NAudio.Wave.WaveIn.GetCapabilities(i);
+            //    MessageBox.Show($"{i}: {caps.ProductName}");
+            //}
+
+
         }
 
+       
 
-      
 
+        //LoadSettings
+        #region
 
         private void LoadSettings()
         {
-            
+           
 
 
             listView1.Items.Clear();
@@ -71,8 +83,8 @@ namespace Sound_Record.Forms
             ProgressBarColor.SetState(progressbar1, 2);
             ProgressBarColor.SetState(progressbar2, 2);
             LoadData();
-            
 
+            stopwatch = new Stopwatch();
             if ("tr-TR" == Properties.Settings.Default.language.ToString())
             {
                 comboLanguages.SelectedIndex = 0;
@@ -81,7 +93,20 @@ namespace Sound_Record.Forms
             {
                 comboLanguages.SelectedIndex = 1;
             }
-            
+            if (string.IsNullOrEmpty(Properties.Settings.Default.volumebar))
+            {
+                Properties.Settings.Default.volumebar = "0";
+                Properties.Settings.Default.Save();
+
+
+            }
+            if (string.IsNullOrEmpty(Properties.Settings.Default.savepath))
+            {
+                Properties.Settings.Default.savepath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                Properties.Settings.Default.Save();
+
+            }
+            comboVolumeBar.SelectedIndex = Convert.ToInt32(Properties.Settings.Default.volumebar.ToString());
             comboChannels.SelectedIndex = Convert.ToInt32(Properties.Settings.Default.channels.ToString());
             comboConfimation.SelectedIndex = Convert.ToInt32(Properties.Settings.Default.confimation.ToString());
             comboDevies.SelectedIndex = Convert.ToInt32(Properties.Settings.Default.devices.ToString());
@@ -89,23 +114,46 @@ namespace Sound_Record.Forms
             textBox1.Text = Properties.Settings.Default.savepath;
             comboOpenFileAfter.SelectedIndex = Convert.ToInt32(Properties.Settings.Default.openfileafter.ToString());
             comboOutRate.SelectedIndex = Convert.ToInt32(Properties.Settings.Default.outrate.ToString());
-            if (string.IsNullOrEmpty(Properties.Settings.Default.savepath))
+            
+            if("0"==Properties.Settings.Default.volumebar.ToString())
             {
-                textBox1.Text = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                progressbar1.Visible = true;
+                progressbar2.Visible = true;
 
             }
-            stopwatch = new Stopwatch();
+            if( "1" == Properties.Settings.Default.volumebar.ToString())
+            {
+                progressbar1.Visible = false;
+                progressbar2.Visible = false;
+            }
+            if ("2" == Properties.Settings.Default.volumebar.ToString())
+            {
+                progressbar1.Visible = false;
+                progressbar2.Visible = true;
+            }
+            if ("3" == Properties.Settings.Default.volumebar.ToString())
+            {
+                progressbar1.Visible = true;
+                progressbar2.Visible = false;
+            }
 
-            
+
+
+
+
 
         }
+        #endregion
 
+        //Record Button
+        #region
         public int Ch;
+        public string fName;
+        public string locName;
 
         private void btnRecord_Click(object sender, EventArgs e)
         {
-            progressbar1.Visible = true;
-            progressbar2.Visible = true;
+            
             stopwatch.Reset();
             int outrate=Convert.ToInt32(comboOutRate.Text);
             string extension=comboExtension.Text;  
@@ -123,7 +171,7 @@ namespace Sound_Record.Forms
             var dialog = new SaveFileDialog();
             dialog.Filter = "Wave Files | *."+extension;
             dialog.InitialDirectory = textBox1.Text;
-            dialog.FileName = $"{DateTime.Now:HH.mm_dd_MMMM_yyyy}".Replace(".", "_");
+            dialog.FileName = $"{DateTime.Now:HH.mm.ss_dd_MMMM_yyyy}".Replace(".", "_");
             
 
             if (Properties.Settings.Default.confimation.ToString() =="1")
@@ -131,14 +179,17 @@ namespace Sound_Record.Forms
                 
                 string filePath = dialog.FileName;
                 label3.Text = textBox1.Text + "\\" + dialog.FileName + "." + comboExtension.Text;
-
+             
                 ListViewItem item = new ListViewItem(dialog.FileName + "." + comboExtension.Text);
                 listView1.Items.Add(item);
                 item.SubItems.Add(DateTime.Now.ToString());
                 item.SubItems.Add(textBox1.Text + "\\" + dialog.FileName + "." + comboExtension.Text);
+                
 
                 outputFileName = textBox1.Text + "\\" + dialog.FileName + "." + comboExtension.Text;
-
+                fName = dialog.FileName + "." + comboExtension.Text;
+                locName = textBox1.Text;
+                
                 btnRecord.Enabled = false;
                 btnStop.Enabled = true;
                 //outputFileName = dialog.FileName;
@@ -160,6 +211,9 @@ namespace Sound_Record.Forms
                     {
                         writer.Dispose();
                         writer = null;
+                        Thread.Sleep(50);
+                        CompressFile();
+
                     }
 
                     btnRecord.Enabled = true;
@@ -196,6 +250,9 @@ namespace Sound_Record.Forms
                 item.SubItems.Add(DateTime.Now.ToString());
                 item.SubItems.Add(dialog.FileName);
 
+                fName = System.IO.Path.GetFileName(dialog.FileName);
+                locName=System.IO.Path.GetDirectoryName(dialog.FileName);
+                
                 outputFileName = dialog.FileName;
                 btnRecord.Enabled = false;
                 btnStop.Enabled = true;
@@ -217,10 +274,13 @@ namespace Sound_Record.Forms
                     {
                         writer.Dispose();
                         writer = null;
+                        Thread.Sleep(50);
+                        CompressFile();
                     }
 
                     btnRecord.Enabled = true;
-                    btnStop.Enabled = false;
+                    btnStop.Enabled = false;               
+
                     capture.Dispose();
 
                 };
@@ -231,16 +291,18 @@ namespace Sound_Record.Forms
                 lbl_Timer.ForeColor = Color.Red;
                 Thread.Sleep(20);
 
+
             }
-
-
-
+           
         }
+        #endregion
+
+        //Stop Button
+        #region
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-            progressbar1.Visible = false;
-            progressbar2.Visible = false;
+            
             progressbar1.Value = 0;
             progressbar1.Update();
             progressbar2.Value = 0;
@@ -250,12 +312,11 @@ namespace Sound_Record.Forms
             btnStop.Enabled = false;
 
 
-
-
-
             if (capture != null)
                 capture.StopRecording();
+                  
             stopwatch.Stop();
+            
             btnPlayPause.Enabled = true;
             if (outputFileName == null)
             {
@@ -275,11 +336,109 @@ namespace Sound_Record.Forms
             }
             lbl_Timer.ForeColor = Color.Green;
             SaveData();
+
+
+
+           
+
         }
+        #endregion
 
-    
+        //PlayPause Button
+        #region
+        private void btnPlayPause_Click(object sender, EventArgs e)
+        {
+
+            WaveFileReader waveFileReader = new WaveFileReader(label3.Text.ToString());
+            if (label3 == null)
+            {
+                MessageBox.Show("Please make a Record first of all");
+                return;
+            }
+
+            if (waveOut.PlaybackState == PlaybackState.Playing)
+            {
+                waveOut.Pause();
+
+                btnPlayPause.Image = Properties.Resources.icons8_play_button_circled_48;
+                btnRecord.Enabled = true;
+                if (btnRecord.Text == "Kayıt")
+                {
+                    btnPlayPause.Text = "Çal";
+                }
+                else
+                {
+                    btnPlayPause.Text = "Play";
+                }
+
+            }
+            else if (waveOut.PlaybackState == PlaybackState.Paused)
+            {
+                waveOut.Play();
+
+                btnPlayPause.Image = Properties.Resources.icons8_pause_squared_48;
+                btnRecord.Enabled = false;
+                waveOut.PlaybackStopped += OutputDevice_PlaybackStopped;
+                if (btnRecord.Text == "Kayıt")
+                {
+                    btnPlayPause.Text = "Duraklat";
+                }
+                else
+                {
+                    btnPlayPause.Text = "Pause";
+                }
+            }
+            else
+            {
+                waveOut.Init(waveFileReader);
+                waveOut.Play();
+
+                btnPlayPause.Image = Properties.Resources.icons8_pause_squared_48;
+                btnRecord.Enabled = false;
+                waveOut.PlaybackStopped += OutputDevice_PlaybackStopped;
+                if (btnRecord.Text == "Kayıt")
+                {
+                    btnPlayPause.Text = "Duraklat";
+                }
+                else
+                {
+                    btnPlayPause.Text = "Pause";
+                }
+            }
+        }
+        #endregion
+
+        //CompressFile
+        #region
+        private void CompressFile()
+        {
+            //fname asdı.extetion
+            //locat c:user:desktop
+            string sourceFilePath =locName+"\\"+ fName;
+            string destinationFilePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)+"\\"+fName;
+            Thread.Sleep(25);
+            File.Copy(sourceFilePath, destinationFilePath, true);
+            File.Delete(sourceFilePath);
+            Thread.Sleep(25);
+            using (var reader = new AudioFileReader(destinationFilePath))
+            {
+
+                var writer2 = new LameMP3FileWriter(sourceFilePath, reader.WaveFormat, 128);
+
+                reader.CopyTo(writer2);
+
+                writer2.Close();
+                writer2.Dispose();
 
 
+            }
+            Thread.Sleep(25);
+            File.Delete(destinationFilePath);
+        }
+        #endregion
+
+        //LoadDevies
+        #region
         private void LoadDevices()
         {
             var enumerator = new MMDeviceEnumerator();
@@ -287,7 +446,7 @@ namespace Sound_Record.Forms
             comboDevies.Items.AddRange(devices.ToArray());
           
         }
-
+        #endregion
 
         // Loading func
         #region
@@ -368,8 +527,8 @@ namespace Sound_Record.Forms
         }
         #endregion
 
-     
-
+        //Menuler System+Sound+Language+About+Update 
+        #region
         private void SystemSettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panelUpdate.Visible = false;
@@ -413,16 +572,48 @@ namespace Sound_Record.Forms
             btnBack.BringToFront();
 
         }
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panelUpdate.Visible = false;
+            panelAbout.Visible = true;
+            panelSoundSettings.Visible = false;
+            panelSystemSettings.Visible = false;
+            panelLanguage.Visible = false;
+            panelAbout.Dock = DockStyle.Fill;
+            btnSave.Visible = false;
 
+            btnBack.Visible = false;
+
+
+        }
+        private void updatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            panelUpdate.Visible = true;
+            panelAbout.Visible = false;
+            panelSoundSettings.Visible = false;
+            panelSystemSettings.Visible = false;
+            panelLanguage.Visible = false;
+            panelUpdate.Dock = DockStyle.Fill;
+            btnUpdate.Visible = true;
+            btnSave.Visible = false;
+            btnBack.Visible = true;
+            btnBack.BringToFront();
+        }
+        #endregion
+
+        //Back save ok Browse linklabel update showrecord clearlist
+        #region
         private void btnBack_Click(object sender, EventArgs e)
         {
+            panelUpdate.Visible=false;
             panelSoundSettings.Visible = false;
             panelSystemSettings.Visible = false;
             panelLanguage.Visible = false;
             btnSave.Visible = false;
             btnBack.Visible = false;
             btnUpdate.Visible = false;
-            LoadSettings();
+            
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -440,6 +631,8 @@ namespace Sound_Record.Forms
             Properties.Settings.Default.openfileafter = comboOpenFileAfter.SelectedIndex.ToString();
             Properties.Settings.Default.Save();
             Properties.Settings.Default.savepath = textBox1.Text.ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.volumebar = comboVolumeBar.SelectedIndex.ToString();
             Properties.Settings.Default.Save();
 
             if ("Turkish" == comboLanguages.Text.ToString())
@@ -479,9 +672,63 @@ namespace Sound_Record.Forms
             
             Application.Restart();
 
+        }
+
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog fbd = new FolderBrowserDialog() { Description = "Select your path." })
+            {
+                if (fbd.ShowDialog() == DialogResult.OK)
+                    textBox1.Text = fbd.SelectedPath;
+            }
+        }
+
+
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string filePath = linkLabel1.Tag.ToString();
+            var ps = new ProcessStartInfo(filePath)
+            {
+                UseShellExecute = true,
+                Verb = "open"
+            };
+            Process.Start(ps);
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            panelAbout.Visible = false;
+            panelSoundSettings.Visible = false;
+            panelSystemSettings.Visible = false;
+            panelLanguage.Visible = false;
 
 
         }
+
+        private void clearListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+            SaveData();
+        }
+
+        private void showRecordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string filePath = textBox1.Text.ToString();
+
+            System.Diagnostics.Process.Start(filePath);
+        }
+
+
+
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            CheckForUpdates();
+        }
+
+
+        #endregion
 
         //ComboBoxes SelectedIndex
         #region
@@ -520,53 +767,14 @@ namespace Sound_Record.Forms
         {
             panelDefaultWall.Focus();
         }
+        private void comboVolumeBar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            panelDefaultWall.Focus();
+        }
         #endregion
 
-        private void btnBrowse_Click(object sender, EventArgs e)
-        {
-            using (FolderBrowserDialog fbd = new FolderBrowserDialog() { Description = "Select your path." })
-            {
-                if (fbd.ShowDialog() == DialogResult.OK)
-                    textBox1.Text = fbd.SelectedPath;
-            }
-        }
-
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            panelUpdate.Visible = false;
-            panelAbout.Visible = true;
-            panelSoundSettings.Visible = false;
-            panelSystemSettings.Visible = false;
-            panelLanguage.Visible = false;
-            panelAbout.Dock = DockStyle.Fill;
-            btnSave.Visible = false;
-           
-            btnBack.Visible = false;
-         
-
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            string filePath = linkLabel1.Tag.ToString();
-            var ps = new ProcessStartInfo(filePath)
-            {
-                UseShellExecute = true,
-                Verb = "open"
-            };
-            Process.Start(ps);
-        }
-
-        private void btnOk_Click(object sender, EventArgs e)
-        {
-            panelAbout.Visible=false;
-            panelSoundSettings.Visible = false;
-            panelSystemSettings.Visible = false;
-            panelLanguage.Visible = false;
-           
-
-        }
-
+        //SaveDATA  LoadDATA
+        #region
 
 
 
@@ -616,11 +824,8 @@ namespace Sound_Record.Forms
             }
         }
 
-
-
-
-        /*********************************************************************************************************************************************/
-        /*********************************************************************************************************************************************/
+        #endregion
+                
         //TEST Listview Right CLİCK
         #region
         private void listView1_MouseClick(object sender, MouseEventArgs e)
@@ -648,12 +853,14 @@ namespace Sound_Record.Forms
                         DelectAction(sender, e, id);
                     };// your action here
                     m.MenuItems.Add(delMenuItem);
+                    
 
                     m.Show(listView1, new System.Drawing.Point(e.X, e.Y));
 
                 }
             }
         }
+       
 
         private void DelectAction(object sender, MouseEventArgs e, string id)
         {
@@ -775,10 +982,9 @@ namespace Sound_Record.Forms
 
         #endregion
 
-        /*********************************************************************************************************************************************/
-        /*********************************************************************************************************************************************/
 
-
+        //HandleDataAvailable(For progressbar)+ TimerTick + Output PLAYBACK
+        #region
         private void HandleDataAvailable(object sender, WaveInEventArgs e)
         {
             // Calculate the volume level of the incoming audio data
@@ -807,67 +1013,7 @@ namespace Sound_Record.Forms
             lbl_Timer.Text = string.Format("{0:hh\\:mm\\:ss}", stopwatch.Elapsed);
         }
 
-        private void btnPlayPause_Click(object sender, EventArgs e)
-        {
-
-            WaveFileReader waveFileReader = new WaveFileReader(label3.Text.ToString());
-            if (label3 == null)
-            {
-                MessageBox.Show("Please make a Record first of all");
-                return;
-            }
-
-            if (waveOut.PlaybackState == PlaybackState.Playing)
-            {
-                waveOut.Pause();
-
-                btnPlayPause.Image = Properties.Resources.icons8_play_button_circled_48;
-                btnRecord.Enabled = true;
-                if (btnRecord.Text == "Kayıt")
-                {
-                    btnPlayPause.Text = "Çal";
-                }
-                else
-                {
-                    btnPlayPause.Text = "Play";
-                }
-
-            }
-            else if (waveOut.PlaybackState == PlaybackState.Paused)
-            {
-                waveOut.Play();
-
-                btnPlayPause.Image = Properties.Resources.icons8_pause_squared_48;
-                btnRecord.Enabled = false;
-                waveOut.PlaybackStopped += OutputDevice_PlaybackStopped;
-                if (btnRecord.Text == "Kayıt")
-                {
-                    btnPlayPause.Text = "Duraklat";
-                }
-                else
-                {
-                    btnPlayPause.Text = "Pause";
-                }
-            }
-            else
-            {
-                waveOut.Init(waveFileReader);
-                waveOut.Play();
-
-                btnPlayPause.Image = Properties.Resources.icons8_pause_squared_48;
-                btnRecord.Enabled = false;
-                waveOut.PlaybackStopped += OutputDevice_PlaybackStopped;
-                if (btnRecord.Text == "Kayıt")
-                {
-                    btnPlayPause.Text = "Duraklat";
-                }
-                else
-                {
-                    btnPlayPause.Text = "Pause";
-                }
-            }
-        }
-
+      
 
         private void OutputDevice_PlaybackStopped(object sender, StoppedEventArgs e)
         {
@@ -884,12 +1030,12 @@ namespace Sound_Record.Forms
             btnRecord.Enabled = true;
         }
 
-
+        #endregion
 
 
         //GİTHUB UPDATER AND ASSEMBLY VERSİON NUMBER
         #region
-        
+
         private void AddVersionNumber()
         {
             System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
@@ -900,7 +1046,7 @@ namespace Sound_Record.Forms
 
         }
         public string releaseversion;
-        private async void CheckForUpdates()
+        public async void CheckForUpdates()
         {
 
             using (var mgr = await UpdateManager.GitHubUpdateManager("https://github.com/firatkaanbitmez/SoundRecorder"))
@@ -913,24 +1059,7 @@ namespace Sound_Record.Forms
 
                     if (updateInfo.ReleasesToApply.Any())
                     {
-                        var versionCount = updateInfo.ReleasesToApply.Count;
-                        var x5 = updateInfo.FutureReleaseEntry.Version.ToString();
-                        var versionWord = versionCount > 1 ? "versions" : "version";
-                        var message = new StringBuilder().AppendLine($"App is {versionCount} {versionWord} behind. Latest version v.{x5}").
-                                                          AppendLine("If you choose to update, changes won't take ").
-                                                          AppendLine("effect until App is restarted.").
-                                                          AppendLine("Would you like to download and install them?").
-                                                          ToString();
-
-                        DialogResult result = MessageBox.Show(message, "App Update", MessageBoxButtons.YesNo);
-                        if (result != DialogResult.Yes)
-                        {
-
-                            //this.logger.Info("update declined by user.");
-                            return;
-                        }
-
-                        //this.logger.Info("Downloading updates");
+                        
 
                         var updateResult = await mgr.UpdateApp();
 
@@ -953,38 +1082,6 @@ namespace Sound_Record.Forms
 
         }
 
-
-
-        #endregion
-
-        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            btnStop.PerformClick();
-            Thread.Sleep(100);
-            Application.Exit();
-        }
-
-        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            btnStop.PerformClick();
-            Thread.Sleep(100);
-            Application.Exit();
-
-        }
-
-        private void clearListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            listView1.Items.Clear();
-            SaveData();
-        }
-
-        private void showRecordToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string filePath = textBox1.Text.ToString();
-
-            System.Diagnostics.Process.Start(filePath);
-        }
-       
         public async void CFU()//Verilen github linki üzerinden Updateleri kontrol edecek fonksiyon
         {
 
@@ -1006,18 +1103,27 @@ namespace Sound_Record.Forms
                         labelOnlineVersion.Text = "v." + x5;
                         labelOnlineVersion.Text = "v." + x5;
                         var versionWord = versionCount > 1 ? "versions" : "version";
-                        labelTitle.Text = "Sound Recorder " + labelOnlineVersion.Text+ "New Available version. Please Look the Update Section";
-
+                        labelTitle.Text = "New Available version. Please Look the Update Section";
+                        btnUpdate.Visible = true;
                         btnUpdate.Enabled = true;
 
-                        
+                        if ("en-US" == Properties.Settings.Default.language.ToString())
+                        {
+                            this.Alert("New Available version \nInstall Now!");
+                        }
+                        if ("tr-TR" == Properties.Settings.Default.language.ToString())
+                        {
+                            this.Alert("Kullanılabilir Yeni Sürüm Var \nHemen Yükle!");
+                        }
 
-                       
+
+
+
                     }
                 }
                 catch (Exception)
                 {
-                   
+
                 }
             }
 
@@ -1025,24 +1131,36 @@ namespace Sound_Record.Forms
 
         }
 
-        private void updatesToolStripMenuItem_Click(object sender, EventArgs e)
+
+        #endregion
+
+        //Form Closed and Closing
+        #region
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
-            btnUpdate.Enabled = false;
-            panelUpdate.Visible= true;
-            panelAbout.Visible = false;
-            panelSoundSettings.Visible = false;
-            panelSystemSettings.Visible = false;
-            panelLanguage.Visible = false;
-            panelUpdate.Dock = DockStyle.Fill;
-            btnUpdate.Visible = true;
-            btnSave.Visible = false;
-            btnBack.Visible = true;
-            btnBack.BringToFront();
+            btnStop.PerformClick();
+            Thread.Sleep(100);
+            Application.Exit();
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            CheckForUpdates();
+            btnStop.PerformClick();
+            Thread.Sleep(100);
+            Application.Exit();
+
         }
+        #endregion
+
+        //Alert Notify
+        #region
+
+        public void Alert(string msg)
+        {
+            frmUpdateNotify frm = new frmUpdateNotify();
+            frm.showAlert(msg);
+        }
+        #endregion
     }
 }

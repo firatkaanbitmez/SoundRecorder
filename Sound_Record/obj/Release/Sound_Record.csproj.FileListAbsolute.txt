@@ -1,3 +1,5 @@
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\libmp3lame.32.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\libmp3lame.64.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Sound Recorder.exe.config
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Sound Recorder.exe
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Sound Recorder.pdb
@@ -13,6 +15,7 @@ C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Mono.Cecil.Rocks.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.Asio.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.Core.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.Lame.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.Midi.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.Wasapi.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.WinForms.dll
@@ -28,14 +31,18 @@ C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Mono.Cecil.Mdb.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Mono.Cecil.Pdb.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Mono.Cecil.Rocks.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.xml
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.Lame.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NuGet.Squirrel.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Squirrel.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\System.Security.AccessControl.xml
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\System.Security.Principal.Windows.xml
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.csproj.AssemblyReference.cache
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.csproj.SuggestedBindingRedirects.cache
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.Forms.frmMain.resources
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.Forms.frmUpdateNotify.resources
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.Properties.Resources.resources
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.frmWelcomeOpening.resources
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.Forms.frmMain.tr-TR.resources
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.frmWelcomeOpening.tr-TR.resources
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.csproj.GenerateResource.cache
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.csproj.CoreCompileInputs.cache
@@ -43,5 +50,3 @@ C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\tr-TR\Sound Recorder.resources.d
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.csproj.CopyComplete
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound Recorder.exe
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound Recorder.pdb
-C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.Forms.frmMain.resources
-C:\Users\FIRAT\Desktop\Sound_Record\obj\Release\Sound_Record.Forms.frmMain.tr-TR.resources

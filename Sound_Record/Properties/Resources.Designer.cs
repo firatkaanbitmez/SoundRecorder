@@ -73,6 +73,16 @@ namespace Sound_Record.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_buy_upgrade {
+            get {
+                object obj = ResourceManager.GetObject("icons8-buy-upgrade", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_fiber_smart_record_128px {
             get {
                 object obj = ResourceManager.GetObject("icons8_fiber_smart_record_128px", resourceCulture);
@@ -133,16 +143,6 @@ namespace Sound_Record.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_settings_32px_1 {
-            get {
-                object obj = ResourceManager.GetObject("icons8_settings_32px_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_stop_squared_48px {
             get {
                 object obj = ResourceManager.GetObject("icons8_stop_squared_48px", resourceCulture);
@@ -176,16 +176,6 @@ namespace Sound_Record.Properties {
         internal static System.Drawing.Bitmap middle_earth_shadow_of_mordo {
             get {
                 object obj = ResourceManager.GetObject("middle-earth-shadow-of-mordo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap recording___1_ {
-            get {
-                object obj = ResourceManager.GetObject("recording  (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

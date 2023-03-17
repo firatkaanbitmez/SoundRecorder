@@ -72,6 +72,9 @@
     <Reference Include="NAudio.Core, Version=2.1.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
       <HintPath>packages\NAudio.Core.2.1.0\lib\netstandard2.0\NAudio.Core.dll</HintPath>
     </Reference>
+    <Reference Include="NAudio.Lame, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.Lame.2.0.1\lib\netstandard2.0\NAudio.Lame.dll</HintPath>
+    </Reference>
     <Reference Include="NAudio.Midi, Version=2.1.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
       <HintPath>packages\NAudio.Midi.2.1.0\lib\netstandard2.0\NAudio.Midi.dll</HintPath>
     </Reference>
@@ -124,6 +127,12 @@
     <Compile Include="Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmUpdateNotify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUpdateNotify.Designer.cs">
+      <DependentUpon>frmUpdateNotify.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\frmWelcomeOpening.cs">
       <SubType>Form</SubType>
@@ -136,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMain.tr-TR.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUpdateNotify.resx">
+      <DependentUpon>frmUpdateNotify.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmWelcomeOpening.tr-TR.resx">
       <DependentUpon>frmWelcomeOpening.cs</DependentUpon>
@@ -176,6 +188,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Others\icons8_fiber_smart_record_2.ico" />
+    <None Include="Resources\icons8-buy-upgrade.gif" />
     <None Include="Resources\middle-earth-shadow-of-mordo.png" />
     <None Include="Resources\icons8_subtract_16px_1.png" />
     <None Include="Resources\icons8_x_16px_1.png" />
@@ -185,7 +198,6 @@
     <None Include="Resources\english_flag.png" />
     <None Include="Resources\icons8-play-button-circled-48.png" />
     <None Include="Resources\icons8-pause-squared-48.png" />
-    <None Include="Resources\icons8_settings_32px_1.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -194,5 +206,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('packages\squirrel.windows.2.0.1\build\squirrel.windows.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\squirrel.windows.2.0.1\build\squirrel.windows.props'))" />
+    <Error Condition="!Exists('packages\NAudio.Lame.2.0.1\build\NAudio.Lame.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NAudio.Lame.2.0.1\build\NAudio.Lame.targets'))" />
   </Target>
+  <Import Project="packages\NAudio.Lame.2.0.1\build\NAudio.Lame.targets" Condition="Exists('packages\NAudio.Lame.2.0.1\build\NAudio.Lame.targets')" />
 </Project>

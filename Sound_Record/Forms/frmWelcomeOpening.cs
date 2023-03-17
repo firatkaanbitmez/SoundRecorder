@@ -23,8 +23,6 @@ namespace Sound_Record
         private void welcomeform_Load(object sender, EventArgs e)
         {
            
-
-
             if (string.IsNullOrEmpty(Properties.Settings.Default.outrate))
             {
                 Loading();
@@ -35,10 +33,6 @@ namespace Sound_Record
                 frms.ShowDialog();
                 this.Close();
             }
-
-
-
-
 
         }
 
@@ -88,7 +82,7 @@ namespace Sound_Record
             comboDevies.SelectedIndex = 0;
             comboExtension.SelectedIndex = 0;
             comboChannels.SelectedIndex = 1;
-            comboOutRate.SelectedIndex = 1;
+            comboOutRate.SelectedIndex = 3;
             comboConfimation.SelectedIndex = 1;
             comboOpenFileAfter.SelectedIndex = 1;
             textBox1.Text = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
@@ -114,7 +108,7 @@ namespace Sound_Record
                     Properties.Settings.Default.Save();
                     Properties.Settings.Default.channels = "1";
                     Properties.Settings.Default.Save();
-                    Properties.Settings.Default.outrate = "1";
+                    Properties.Settings.Default.outrate = "3";
                     Properties.Settings.Default.Save();
                     Properties.Settings.Default.confimation = "1";
                     Properties.Settings.Default.Save();
@@ -141,7 +135,7 @@ namespace Sound_Record
                     Properties.Settings.Default.Save();
                     Properties.Settings.Default.channels = "1";
                     Properties.Settings.Default.Save();
-                    Properties.Settings.Default.outrate = "1";
+                    Properties.Settings.Default.outrate = "3";
                     Properties.Settings.Default.Save();
                     Properties.Settings.Default.confimation = "1";
                     Properties.Settings.Default.Save();
