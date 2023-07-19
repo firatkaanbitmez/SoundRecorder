@@ -118,62 +118,191 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panelUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>612, 49</value>
+  <data name="panelAbouts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>728, 118</value>
   </data>
-  <data name="panelUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 38</value>
+  <data name="linkLabelProjectURL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 23</value>
+  </data>
+  <data name="linkLabelProjectURL.Text" xml:space="preserve">
+    <value>Tıklayın ve Proje Sayfasına Gidin</value>
+  </data>
+  <data name="panelVisualizationEffects.Location" type="System.Drawing.Point, System.Drawing">
+    <value>728, 95</value>
+  </data>
+  <data name="btnColorMAXSET.Location" type="System.Drawing.Point, System.Drawing">
+    <value>608, 155</value>
+  </data>
+  <data name="btnColorMAXSET.Text" xml:space="preserve">
+    <value>Renk Seç</value>
+  </data>
+  <data name="btnColorBASESet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>608, 111</value>
+  </data>
+  <data name="btnColorBASESet.Text" xml:space="preserve">
+    <value>Renk Seç</value>
+  </data>
+  <data name="txtVisualizationCmax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>432, 155</value>
+  </data>
+  <data name="txtVisualizationCbase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>432, 111</value>
+  </data>
+  <data name="txtVisualizationBarSpacing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>432, 65</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 69</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Görünürlük</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>335, 71</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 20</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Bar Aralığı</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 160</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Bar Sayısı</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 161</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 20</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Renk Tavanı</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 116</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 20</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Renk Tabanı</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 114</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Yüksek Kalite</value>
+  </data>
+  <data name="panelinterface.Location" type="System.Drawing.Point, System.Drawing">
+    <value>728, 134</value>
+  </data>
+  <data name="btnLightButton.Text" xml:space="preserve">
+    <value>Renk Seç</value>
+  </data>
+  <data name="btnLightText.Text" xml:space="preserve">
+    <value>Renk Seç</value>
+  </data>
+  <data name="btnLightBack.Text" xml:space="preserve">
+    <value>Renk Seç</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 20</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Buttons Rengi</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 20</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Metin Rengi</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 20</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Arka Plan Rengi</value>
+  </data>
+  <data name="btnDarkButton.Text" xml:space="preserve">
+    <value>Renk Seç</value>
+  </data>
+  <data name="btnDarkText.Text" xml:space="preserve">
+    <value>Renk Seç</value>
+  </data>
+  <data name="btnDarkBack.Text" xml:space="preserve">
+    <value>Renk Seç</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 20</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Buttons Rengi</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 20</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Metin Rengi</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 20</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Arka Plan Rengi</value>
+  </data>
+  <data name="lblRESETCOLOR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>471, 23</value>
+  </data>
+  <data name="lblRESETCOLOR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 24</value>
+  </data>
+  <data name="lblRESETCOLOR.Text" xml:space="preserve">
+    <value>Renk Ayarlarını Sıfırla</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 28</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Açık Tema</value>
+  </data>
+  <data name="labelColorScheme.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 28</value>
+  </data>
+  <data name="labelColorScheme.Text" xml:space="preserve">
+    <value>Koyu Tema</value>
+  </data>
+  <data name="panelUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>728, 187</value>
+  </data>
+  <data name="labelAvailableInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 23</value>
+  </data>
+  <data name="labelAvailableInfo.Text" xml:space="preserve">
+    <value>İndirilebilir Güncelleme Yok</value>
   </data>
   <data name="btnUpdate.Text" xml:space="preserve">
     <value>Güncellemeyi Yükle</value>
   </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>365, 204</value>
-  </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 23</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Güncelleme mevcut değil</value>
-  </data>
-  <data name="labelOnlineVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 204</value>
-  </data>
-  <data name="labelOnlineVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 23</value>
-  </data>
-  <data name="labelOnlineVersion.Text" xml:space="preserve">
-    <value>Çevrimiçi Sürüm</value>
-  </data>
-  <data name="labelCurrentVersion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 162</value>
-  </data>
   <data name="labelCurrentVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 23</value>
+    <value>203, 23</value>
   </data>
   <data name="labelCurrentVersion.Text" xml:space="preserve">
-    <value>Kullanılan Sürüm</value>
-  </data>
-  <data name="panelAbout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 98</value>
-  </data>
-  <data name="panelAbout.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 35</value>
-  </data>
-  <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>456, 188</value>
-  </data>
-  <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 18</value>
-  </data>
-  <data name="linkLabel1.Text" xml:space="preserve">
-    <value>Tıkla ve Proje Sayfasına Git</value>
+    <value>Kullanılan Version v.</value>
   </data>
   <data name="panelLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>530, 37</value>
-  </data>
-  <data name="panelLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 32</value>
+    <value>728, 63</value>
   </data>
   <data name="comboLanguages.Items" xml:space="preserve">
     <value>Türkçe</value>
@@ -181,59 +310,35 @@
   <data name="comboLanguages.Items1" xml:space="preserve">
     <value>İngilizce</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 174</value>
+  <data name="labelLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 173</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 18</value>
+  <data name="labelLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 20</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Dil</value>
+  <data name="labelLanguage.Text" xml:space="preserve">
+    <value>Arayüz Dili</value>
   </data>
   <data name="panelSystemSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>716, 68</value>
+    <value>728, 157</value>
   </data>
-  <data name="panelSystemSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 24</value>
+  <data name="labelRecordDevice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 88</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>169, 285</value>
+  <data name="labelRecordDevice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 20</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 18</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Ses Barı</value>
-  </data>
-  <data name="comboVolumeBar.Items" xml:space="preserve">
-    <value>Aktif</value>
-  </data>
-  <data name="comboVolumeBar.Items1" xml:space="preserve">
-    <value>Devredışı</value>
-  </data>
-  <data name="comboVolumeBar.Items2" xml:space="preserve">
-    <value>Sadece Sağ</value>
-  </data>
-  <data name="comboVolumeBar.Items3" xml:space="preserve">
-    <value>Sadece Sol</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 111</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 18</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="labelRecordDevice.Text" xml:space="preserve">
     <value>Kaydedilecek Ses Aygıtı</value>
   </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 241</value>
+  <data name="labelOpenFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 218</value>
   </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 18</value>
+  <data name="labelOpenFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 20</value>
   </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Tamamlanınca Dosya Açılsın</value>
+  <data name="labelOpenFile.Text" xml:space="preserve">
+    <value>Kaydettikten Sonra Dosyayı Aç</value>
   </data>
   <data name="comboOpenFileAfter.Items" xml:space="preserve">
     <value>Evet, Kayıt Durdurulduğunda Kaydın Dosya Konumunu Aç</value>
@@ -247,52 +352,61 @@
   <data name="comboConfimation.Items1" xml:space="preserve">
     <value>Hayır, Doğrudan Kayda Başlayın</value>
   </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 198</value>
+  <data name="labelConfirmation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 173</value>
   </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 18</value>
+  <data name="labelConfirmation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 20</value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
+  <data name="labelConfirmation.Text" xml:space="preserve">
     <value>Kayıt Onayı</value>
   </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 153</value>
+  <data name="labelFileSaveLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 132</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>197, 18</value>
+  <data name="labelFileSaveLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 20</value>
   </data>
-  <data name="label8.Text" xml:space="preserve">
+  <data name="labelFileSaveLocation.Text" xml:space="preserve">
     <value>Dosya Kaydetme Konumu</value>
   </data>
   <data name="panelSoundSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>694, 37</value>
+    <value>728, 79</value>
   </data>
-  <data name="panelSoundSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 10</value>
+  <data name="comboExtension.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 117</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 18</value>
+  <data name="labelExtension.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 118</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Dosya Uzantısı Türü</value>
+  <data name="labelExtension.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 20</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 243</value>
+  <data name="labelExtension.Text" xml:space="preserve">
+    <value>Dosya Uzantı Türü</value>
   </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 18</value>
+  <data name="comboChannels.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 207</value>
   </data>
-  <data name="label7.Text" xml:space="preserve">
+  <data name="comboOutRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 162</value>
+  </data>
+  <data name="labelChannels.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 208</value>
+  </data>
+  <data name="labelChannels.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 20</value>
+  </data>
+  <data name="labelChannels.Text" xml:space="preserve">
     <value>Ses Kayıt Kanalları</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 198</value>
+  <data name="labelOutRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>202, 163</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 18</value>
+  <data name="labelOutRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
+  <data name="labelOutRate.Text" xml:space="preserve">
     <value>Ses Çıkış Hızı</value>
   </data>
   <data name="btnPlayPause.Text" xml:space="preserve">
@@ -303,9 +417,6 @@
   </data>
   <data name="btnRecord.Text" xml:space="preserve">
     <value>Kayıt</value>
-  </data>
-  <data name="btnBack.Text" xml:space="preserve">
-    <value>Geri</value>
   </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 24</value>
@@ -346,14 +457,35 @@
   <data name="soundSettingsToolStripMenuItem1.Text" xml:space="preserve">
     <value>Ses Ayarları</value>
   </data>
+  <data name="ınterfaceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 24</value>
+  </data>
+  <data name="ınterfaceToolStripMenuItem.Text" xml:space="preserve">
+    <value>Görünüm</value>
+  </data>
+  <data name="userInterfaceToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 24</value>
+  </data>
+  <data name="userInterfaceToolStripMenuItem.Text" xml:space="preserve">
+    <value>Kullanıcı Arayüzü</value>
+  </data>
   <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 6</value>
+    <value>265, 6</value>
   </data>
-  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>197, 24</value>
+  <data name="audioVisualizationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 24</value>
   </data>
-  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
-    <value>Dil Ayarları</value>
+  <data name="audioVisualizationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Görselleştirme Efektleri</value>
+  </data>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 6</value>
+  </data>
+  <data name="languageToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 24</value>
+  </data>
+  <data name="languageToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Dil</value>
   </data>
   <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 24</value>
@@ -378,6 +510,108 @@
   </data>
   <data name="btnSave.Text" xml:space="preserve">
     <value>Ayarları Kaydet</value>
+  </data>
+  <data name="btnBack.Text" xml:space="preserve">
+    <value>Geri</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelDefaultWall.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="kryptonColorDialog1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAEBAAAAEAIABoBAAAJgAAACAgAAABACAAqBAAAI4EAAAoAAAAEAAAACAAAAABACAAAAAAADAE
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADYo57c2J+d3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOSvqJDUm
+        6UQ0Iec2AAD/AgAAAAA6LephOivo/Dcp52oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9MecVPjDqtDst
+        6f85Kuj/Nifn/zMj5towHuU7AAAAAD0u6Ho8Len0Ny7tHAAAAAAAAAAAAAAAAAAAAABJSf8HRDfr0UI0
+        6/8/Mer/PC3p/zkq6P83J+f/NCTm9TIh4y5VVf8DPzDq3T8v6YIAAAAAAAAAAAAAAAAAAAAASj3vYEg7
+        7f9FN+z/QjTr/0Ax6v89Lun/Oivo/zco6P81JeetAAAAAEI07IRBM+vPAAAAAAAAAAAAAAAAAAAAAEw/
+        751LPu7/STvt/0Y47f9DNez/QDLr/z4v6v87LOn/OCno6wAAAABGOO5bRDfs8AAAAAAAAAAAAAAAAAAA
+        AABRRPCeTkHv/0w/7/9JPO7/Rznt/0Q27P9BM+v/PjDq/zws6esAAAAASD3uXEc77e8AAAAAAAAAAAAA
+        AAAAAAAAU0byYlBE8P9OQvD/TD/v/0o97v9HOu3/RTfs/0I06/8/MOquAAAAAEtA8IRMPu7OAAAAAAAA
+        AAAAAAAAAAAAAElJ/wdTR/LRUUXx/09C8P9NQO//Sz7u/0g77f9FOOz1QzfpLlVV/wNOQvDdTkHvggAA
+        AAAAAAAAAAAAAAAAAAAAAAAAVUnzFVRI8rRSRfH/T0Pw/01B7/9LPu3aST3uOwAAAABSRfB6UkXx9FJA
+        7RwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVUfxJFNH8ERQQvE2gID/AgAAAABXTPJhVUny/FRI
+        82oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWU70t1hL
+        8ncAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA/+8AAP/3AAD4OwAA8BkAAPAJAADgDQAA4A0AAPAJ
+        AADwGQAA+DsAAP/3AAD/7wAA//8AAP//AAAoAAAAIAAAAEAAAAABACAAAAAAAIAQAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        8f9SRvH/UUTw/1BD8P9OQvD/TUHv/0xA7/RMPu2DRkboCwAAAAAAAAAAAAAAAFJH70FTR/H6Ukbx/1JG
+        8d5NTeYKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAVUjyJ1JH8nZSRvGSUkTymVFE8ItQQvFZTjvrDQAAAAAAAAAAAAAAAAAAAABXTPQvVUny7lRI
+        8v9USPL9U0fwRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWUr0SFZL
+        8+1WSvL/VUry/1RI838AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABYTfPEWEzz/1dM8/9XS/KMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAFxR9C9ZTvXzWEzzawAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAElJ/wcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////////////////////////7////8P////j///P8f/+APj//A
+        B4//gAPH/wAB5/4AAeP+AADj/gAA4/4AAOP+AADj/gAA4/4AAOP+AAHj/wAB5/+AA8f/wAeP/+APj//8
+        fx////4////8P////v//////////////////////
+</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -473,9 +707,5 @@
         B4//gAPH/wAB5/4AAeP+AADj/gAA4/4AAOP+AADj/gAA4/4AAOP+AAHj/wAB5/+AA8f/wAeP/+APj//8
         fx////4////8P////v//////////////////////
 </value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
 </root>

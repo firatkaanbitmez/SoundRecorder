@@ -134,12 +134,132 @@ namespace Sound_Record.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string volumebar {
+        public string theme {
             get {
-                return ((string)(this["volumebar"]));
+                return ((string)(this["theme"]));
             }
             set {
-                this["volumebar"] = value;
+                this["theme"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DarkBackground {
+            get {
+                return ((string)(this["DarkBackground"]));
+            }
+            set {
+                this["DarkBackground"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DarkText {
+            get {
+                return ((string)(this["DarkText"]));
+            }
+            set {
+                this["DarkText"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LightBackground {
+            get {
+                return ((string)(this["LightBackground"]));
+            }
+            set {
+                this["LightBackground"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string LightText {
+            get {
+                return ((string)(this["LightText"]));
+            }
+            set {
+                this["LightText"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string VisVisible {
+            get {
+                return ((string)(this["VisVisible"]));
+            }
+            set {
+                this["VisVisible"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string VisQuality {
+            get {
+                return ((string)(this["VisQuality"]));
+            }
+            set {
+                this["VisQuality"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string VisCount {
+            get {
+                return ((string)(this["VisCount"]));
+            }
+            set {
+                this["VisCount"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string VisSpacing {
+            get {
+                return ((string)(this["VisSpacing"]));
+            }
+            set {
+                this["VisSpacing"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string VisColorBase {
+            get {
+                return ((string)(this["VisColorBase"]));
+            }
+            set {
+                this["VisColorBase"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string VisColorMax {
+            get {
+                return ((string)(this["VisColorMax"]));
+            }
+            set {
+                this["VisColorMax"] = value;
             }
         }
     }

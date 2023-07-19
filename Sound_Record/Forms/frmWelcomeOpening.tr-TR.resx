@@ -117,45 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panelWelcomeFirst.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 17</value>
+  </data>
   <data name="btnCustom.Text" xml:space="preserve">
     <value>Özel Kurulum</value>
   </data>
   <data name="btnExpress.Text" xml:space="preserve">
     <value>Hızlı Kurulum</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelwelcomeInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 129</value>
+  </data>
+  <data name="labelwelcomeInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>299, 23</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
+  <data name="labelwelcomeInfo.Text" xml:space="preserve">
     <value>Sound Recorder'a Hoş Geldiniz</value>
   </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelwelcomeInfo3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 214</value>
+  </data>
+  <data name="labelwelcomeInfo3.Size" type="System.Drawing.Size, System.Drawing">
     <value>355, 23</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
+  <data name="labelwelcomeInfo3.Text" xml:space="preserve">
     <value>Lütfen Kurulum Seçeneğini Belirleyin</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 165</value>
+  <data name="labelwelcomeInfo2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 174</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>645, 23</value>
+  <data name="labelwelcomeInfo2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>655, 23</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Sound Recorder'ı kullanmak için Özelleştirmeleri yapmanız gerekir.</value>
+  <data name="labelwelcomeInfo2.Text" xml:space="preserve">
+    <value>Sound Recorder kullanmak için Özelleştirmeleri Yapmanız Gerekiyor</value>
   </data>
-  <data name="panelWelcomeFirst.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 32</value>
+  <data name="labelwelcomeAfterRecord.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 352</value>
   </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 352</value>
+  <data name="labelwelcomeAfterRecord.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 18</value>
   </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>212, 18</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Tamamlanınca Dosya Açılsın</value>
+  <data name="labelwelcomeAfterRecord.Text" xml:space="preserve">
+    <value>Kaydettikten Sonra Dosyayı Aç</value>
   </data>
   <data name="comboOpenFileAfter.Items" xml:space="preserve">
     <value>Evet, Kayıt Durdurulduğunda Kaydın Dosya Konumunu Aç</value>
@@ -169,65 +175,62 @@
   <data name="comboConfimation.Items1" xml:space="preserve">
     <value>Hayır, Doğrudan Kayda Başlayın</value>
   </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 307</value>
+  <data name="labelwelcomeConfirmation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 307</value>
   </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelwelcomeConfirmation.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 18</value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
+  <data name="labelwelcomeConfirmation.Text" xml:space="preserve">
     <value>Kayıt Onayı</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>100, 127</value>
+  <data name="labelwelcomeExtension.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 127</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 18</value>
+  <data name="labelwelcomeExtension.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 18</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Dosya Uzantısı Türü</value>
+  <data name="labelwelcomeExtension.Text" xml:space="preserve">
+    <value>Dosya Uzantı Türü</value>
   </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 265</value>
+  <data name="labelwelcomeSaveLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 264</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelwelcomeSaveLocation.Size" type="System.Drawing.Size, System.Drawing">
     <value>197, 18</value>
   </data>
-  <data name="label8.Text" xml:space="preserve">
+  <data name="labelwelcomeSaveLocation.Text" xml:space="preserve">
     <value>Dosya Kaydetme Konumu</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 217</value>
+  <data name="labelwelcomeChannels.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 217</value>
   </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelwelcomeChannels.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 18</value>
   </data>
-  <data name="label7.Text" xml:space="preserve">
+  <data name="labelwelcomeChannels.Text" xml:space="preserve">
     <value>Ses Kayıt Kanalları</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 172</value>
+  <data name="labelwelcomeOutRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 172</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelwelcomeOutRate.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 18</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
+  <data name="labelwelcomeOutRate.Text" xml:space="preserve">
     <value>Ses Çıkış Hızı</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 82</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelwelcomedevice.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 18</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
+  <data name="labelwelcomedevice.Text" xml:space="preserve">
     <value>Kaydedilecek Ses Aygıtı</value>
   </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 20</value>
+  <data name="labelwelcomeInfo4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>396, 20</value>
   </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Seçimlerinizi Yapın ve Kaydet Butonuna Basın</value>
+  <data name="labelwelcomeInfo4.Text" xml:space="preserve">
+    <value>Seçimlerinizi Yapın ve Kaydet Butonuna Basınız !!</value>
   </data>
   <data name="btnBack.Text" xml:space="preserve">
     <value>Geri Dön</value>

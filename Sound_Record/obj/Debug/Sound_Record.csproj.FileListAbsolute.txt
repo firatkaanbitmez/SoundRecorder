@@ -39,29 +39,71 @@ C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.csproj.Cor
 C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.csproj.CopyComplete
 C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound Recorder.exe
 C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound Recorder.pdb
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\bin\Debug\tr-TR\Sound Recorder.resources.dll
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.Forms.frmMain.resources
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.frmWelcomeOpening.resources
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.Forms.frmMain.tr-TR.resources
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.frmWelcomeOpening.tr-TR.resources
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\tr-TR\Sound Recorder.resources.dll
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\bin\Debug\libmp3lame.32.dll
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\bin\Debug\libmp3lame.64.dll
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\bin\Debug\MaterialSkin.dll
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\bin\Debug\NAudio.Lame.dll
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\bin\Debug\Newtonsoft.Json.dll
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\bin\Debug\NAudio.Lame.pdb
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\bin\Debug\Newtonsoft.Json.xml
+C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.Forms.frmUpdateNotify.resources
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\libmp3lame.32.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\libmp3lame.64.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Sound Recorder.exe.config
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Sound Recorder.exe
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Sound Recorder.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\tr-TR\Sound Recorder.resources.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\CSAudioVisualization.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\DeltaCompressionDotNet.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\DeltaCompressionDotNet.MsDelta.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\DeltaCompressionDotNet.PatchApi.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Krypton.Toolkit.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.Rocks.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.Asio.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.Core.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.Lame.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.Midi.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.Wasapi.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.WinForms.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.WinMM.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Newtonsoft.Json.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NuGet.Squirrel.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\SharpCompress.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Squirrel.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\System.Security.AccessControl.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\CSCore.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Krypton.Toolkit.xml
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.pdb
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.Mdb.pdb
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.Pdb.pdb
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.Rocks.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.xml
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.Lame.pdb
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Newtonsoft.Json.xml
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NuGet.Squirrel.pdb
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Squirrel.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\System.Security.AccessControl.xml
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.csproj.AssemblyReference.cache
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.csproj.SuggestedBindingRedirects.cache
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.Forms.frmMain.resources
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.Forms.frmUpdateNotify.resources
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.Properties.Resources.resources
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.frmWelcomeOpening.resources
+C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.Forms.frmMain.tr-TR.resources
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.frmWelcomeOpening.tr-TR.resources
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.csproj.GenerateResource.cache
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.csproj.CoreCompileInputs.cache
@@ -69,31 +111,3 @@ C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\tr-TR\Sound Recorder.resources.dll
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.csproj.CopyComplete
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound Recorder.exe
 C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound Recorder.pdb
-C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.Forms.frmMain.tr-TR.resources
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\DeltaCompressionDotNet.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\DeltaCompressionDotNet.MsDelta.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\DeltaCompressionDotNet.PatchApi.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.Mdb.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.Pdb.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.Rocks.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NuGet.Squirrel.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\SharpCompress.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Squirrel.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.pdb
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.Mdb.pdb
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.Pdb.pdb
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Mono.Cecil.Rocks.pdb
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NuGet.Squirrel.pdb
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\Squirrel.pdb
-C:\Users\FIRAT\Desktop\New folder\Sound_Record\bin\Debug\tr-TR\Sound Recorder.resources.dll
-C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.Forms.frmMain.resources
-C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.frmWelcomeOpening.resources
-C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.Forms.frmMain.tr-TR.resources
-C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\Sound_Record.frmWelcomeOpening.tr-TR.resources
-C:\Users\FIRAT\Desktop\New folder\Sound_Record\obj\Debug\tr-TR\Sound Recorder.resources.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\libmp3lame.32.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\libmp3lame.64.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.Lame.dll
-C:\Users\FIRAT\Desktop\Sound_Record\bin\Debug\NAudio.Lame.pdb
-C:\Users\FIRAT\Desktop\Sound_Record\obj\Debug\Sound_Record.Forms.frmUpdateNotify.resources

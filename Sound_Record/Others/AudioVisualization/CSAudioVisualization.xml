@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSAudioVisualization</name>
+    </assembly>
+    <members>
+        <member name="F:Microncode.Lic.frmLicense.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Microncode.Lic.frmLicense.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Microncode.Lic.frmLicense.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Microncode.Lic.LicenseLib.CheckLicense(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Check the license of the library. If the registration is OK a MessageBox will be display with a message 'The registration is OK.', otherwise, a registration window will be display with an instructions of register the library.
+            </summary>
+        </member>
+        <member name="T:Options.Core.FileSelectorTypeEditor">
+            <summary>
+            Customer UITypeEditor that pops up a
+            file selector dialog
+            </summary>
+        </member>
+        <member name="T:Options.Core.ListTypeConverterIn">
+            <summary>
+            Get input device type
+            </summary>
+        </member>
+        <member name="T:Options.Core.ListTypeConverterOut">
+            <summary>
+            Get output device type
+            </summary>
+        </member>
+        <member name="T:WinformsVisualization.Visualization.BasicSpectrumProvider">
+            <summary>
+                BasicSpectrumProvider
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.Mode">
+            <summary>
+            The mode of the capturing process. This can be WasapiLoopbackCapture (default), WasapiCapture or LineIn.
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.DeviceIndex">
+            <summary>
+            The audio source device.
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.ColorBase">
+            <summary>
+            The base color of the AudioVisualization.
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.ColorMax">
+            <summary>
+            The max color of the AudioVisualization.
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.HighQuality">
+            <summary>
+            The quality of the AudioVisualization.
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.Interval">
+            <summary>
+            The interval value of the timer of the AudioVisualization.
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.UseAverage">
+            <summary>
+            The UseAverage of the AudioVisualization.
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.BarCount">
+            <summary>
+            The number of bars of the AudioVisualization.
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.BarSpacing">
+            <summary>
+            The bar spacing of the AudioVisualization.
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.IsXLogScale">
+            <summary>
+            The IsXLogScale of the AudioVisualization.
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.MaximumFrequency">
+            <summary>
+            The maximum frequency of the AudioVisualization.
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.UserName">
+            <summary>
+            The user name.
+            </summary>
+        </member>
+        <member name="P:CSAudioVisualization.AudioVisualization.UserKey">
+            <summary>
+            The user key.
+            </summary>
+        </member>
+        <member name="M:CSAudioVisualization.AudioVisualization.CheckLicense(System.Boolean)">
+            <summary>
+            Check the user license of the component. 
+            </summary>
+            <param name="DisplayRegistrationWindow">Display the registration form or not.</param>
+            <returns>True if the license is OK, false if not.</returns>
+        </member>
+        <member name="M:CSAudioVisualization.AudioVisualization.RaiseError(System.Exception)">
+            <summary>
+            Raise an error
+            </summary>
+            <param name="ex">The error exception</param>
+        </member>
+        <member name="M:CSAudioVisualization.AudioVisualization.GetDevices(CSAudioVisualization.Mode)">
+            <summary>
+            Get the all audio devices that installed on the local machine according to the capture mode.
+            </summary>
+            <param name="mode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSAudioVisualization.AudioVisualization.GetDeviceDefaultIndex(CSAudioVisualization.Mode)">
+            <summary>
+            Get the default input device index. This works when the mode of the recorder is on WASAPI.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CSAudioVisualization.AudioVisualization.GetEnumValue(System.Enum)">
+            <summary>
+            Get the value of the selected item of the Enum
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSAudioVisualization.AudioVisualization.GetEnumValue``1(System.String)">
+            <summary>
+            Get the value of the selected item of the Enum
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CSAudioVisualization.AudioVisualization.Start">
+            <summary>
+            Start the visualization
+            </summary>
+        </member>
+        <member name="M:CSAudioVisualization.AudioVisualization.Stop">
+            <summary>
+            Stop the visualization
+            </summary>
+        </member>
+        <member name="F:CSAudioVisualization.AudioVisualization.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CSAudioVisualization.AudioVisualization.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CSAudioVisualization.AudioVisualization.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:CSAudioVisualization.Mode">
+            <summary>
+            The recorder mode of the operation. this can be WasapiCapture, WasapiLoopbackCapture and LineIn.
+            </summary>
+        </member>
+    </members>
+</doc>

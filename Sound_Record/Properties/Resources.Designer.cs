@@ -63,6 +63,36 @@ namespace Sound_Record.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dark_exit {
+            get {
+                object obj = ResourceManager.GetObject("dark_exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dark_subtract {
+            get {
+                object obj = ResourceManager.GetObject("dark_subtract", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap darktheme {
+            get {
+                object obj = ResourceManager.GetObject("darktheme", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap english_flag {
             get {
                 object obj = ResourceManager.GetObject("english_flag", resourceCulture);
@@ -73,9 +103,9 @@ namespace Sound_Record.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_buy_upgrade {
+        internal static System.Drawing.Bitmap ezgif_5_c012dbf7bf {
             get {
-                object obj = ResourceManager.GetObject("icons8-buy-upgrade", resourceCulture);
+                object obj = ResourceManager.GetObject("ezgif-5-c012dbf7bf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +183,9 @@ namespace Sound_Record.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_subtract_16px_1 {
+        internal static System.Drawing.Bitmap light_exit {
             get {
-                object obj = ResourceManager.GetObject("icons8_subtract_16px_1", resourceCulture);
+                object obj = ResourceManager.GetObject("light_exit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +193,19 @@ namespace Sound_Record.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_x_16px_1 {
+        internal static System.Drawing.Bitmap light_subtract {
             get {
-                object obj = ResourceManager.GetObject("icons8_x_16px_1", resourceCulture);
+                object obj = ResourceManager.GetObject("light_subtract", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lighttheme {
+            get {
+                object obj = ResourceManager.GetObject("lighttheme", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

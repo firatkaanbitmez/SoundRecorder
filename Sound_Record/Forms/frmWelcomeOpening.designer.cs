@@ -30,34 +30,35 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmWelcomeOpening));
             this.panelUpper = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnLanguage = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelWelcomeTitle = new System.Windows.Forms.Label();
             this.panelDefaultWall = new System.Windows.Forms.Panel();
             this.panelCustomize = new System.Windows.Forms.Panel();
             this.panelWelcomeFirst = new System.Windows.Forms.Panel();
             this.btnCustom = new System.Windows.Forms.Button();
             this.btnExpress = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelwelcomeInfo = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.labelwelcomeInfo3 = new System.Windows.Forms.Label();
+            this.labelwelcomeInfo2 = new System.Windows.Forms.Label();
+            this.labelwelcomeAfterRecord = new System.Windows.Forms.Label();
             this.comboOpenFileAfter = new System.Windows.Forms.ComboBox();
             this.comboConfimation = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.labelwelcomeConfirmation = new System.Windows.Forms.Label();
             this.comboExtension = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelwelcomeExtension = new System.Windows.Forms.Label();
             this.comboChannels = new System.Windows.Forms.ComboBox();
             this.comboOutRate = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelwelcomeSaveLocation = new System.Windows.Forms.Label();
+            this.labelwelcomeChannels = new System.Windows.Forms.Label();
+            this.labelwelcomeOutRate = new System.Windows.Forms.Label();
             this.comboDevies = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.labelwelcomedevice = new System.Windows.Forms.Label();
+            this.labelwelcomeInfo4 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnBrowse = new System.Windows.Forms.Button();
@@ -74,20 +75,33 @@
             // 
             resources.ApplyResources(this.panelUpper, "panelUpper");
             this.panelUpper.BackColor = System.Drawing.Color.AliceBlue;
+            this.panelUpper.Controls.Add(this.button1);
             this.panelUpper.Controls.Add(this.btnLanguage);
             this.panelUpper.Controls.Add(this.btnMinimize);
             this.panelUpper.Controls.Add(this.btnExit);
             this.panelUpper.Controls.Add(this.pictureBox1);
-            this.panelUpper.Controls.Add(this.label1);
+            this.panelUpper.Controls.Add(this.labelWelcomeTitle);
             this.panelUpper.Name = "panelUpper";
             this.panelUpper.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panelUpper.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panelUpper.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = global::Sound_Record.Properties.Resources.lighttheme;
+            this.button1.Name = "button1";
+            this.button1.TabStop = false;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnLanguage
             // 
             resources.ApplyResources(this.btnLanguage, "btnLanguage");
             this.btnLanguage.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnLanguage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnLanguage.ForeColor = System.Drawing.Color.Black;
             this.btnLanguage.Image = global::Sound_Record.Properties.Resources.turkish_flag;
             this.btnLanguage.Name = "btnLanguage";
@@ -98,8 +112,8 @@
             // btnMinimize
             // 
             resources.ApplyResources(this.btnMinimize, "btnMinimize");
+            this.btnMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnMinimize.ForeColor = System.Drawing.Color.Black;
-            this.btnMinimize.Image = global::Sound_Record.Properties.Resources.icons8_subtract_16px_1;
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.TabStop = false;
             this.btnMinimize.UseVisualStyleBackColor = false;
@@ -108,8 +122,8 @@
             // btnExit
             // 
             resources.ApplyResources(this.btnExit, "btnExit");
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.Image = global::Sound_Record.Properties.Resources.icons8_x_16px_1;
             this.btnExit.Name = "btnExit";
             this.btnExit.TabStop = false;
             this.btnExit.UseVisualStyleBackColor = false;
@@ -122,11 +136,11 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // labelWelcomeTitle
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.labelWelcomeTitle, "labelWelcomeTitle");
+            this.labelWelcomeTitle.ForeColor = System.Drawing.Color.Black;
+            this.labelWelcomeTitle.Name = "labelWelcomeTitle";
             // 
             // panelDefaultWall
             // 
@@ -140,20 +154,20 @@
             resources.ApplyResources(this.panelCustomize, "panelCustomize");
             this.panelCustomize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(57)))));
             this.panelCustomize.Controls.Add(this.panelWelcomeFirst);
-            this.panelCustomize.Controls.Add(this.label10);
+            this.panelCustomize.Controls.Add(this.labelwelcomeAfterRecord);
             this.panelCustomize.Controls.Add(this.comboOpenFileAfter);
             this.panelCustomize.Controls.Add(this.comboConfimation);
-            this.panelCustomize.Controls.Add(this.label9);
+            this.panelCustomize.Controls.Add(this.labelwelcomeConfirmation);
             this.panelCustomize.Controls.Add(this.comboExtension);
-            this.panelCustomize.Controls.Add(this.label6);
+            this.panelCustomize.Controls.Add(this.labelwelcomeExtension);
             this.panelCustomize.Controls.Add(this.comboChannels);
             this.panelCustomize.Controls.Add(this.comboOutRate);
-            this.panelCustomize.Controls.Add(this.label8);
-            this.panelCustomize.Controls.Add(this.label7);
-            this.panelCustomize.Controls.Add(this.label5);
+            this.panelCustomize.Controls.Add(this.labelwelcomeSaveLocation);
+            this.panelCustomize.Controls.Add(this.labelwelcomeChannels);
+            this.panelCustomize.Controls.Add(this.labelwelcomeOutRate);
             this.panelCustomize.Controls.Add(this.comboDevies);
-            this.panelCustomize.Controls.Add(this.label4);
-            this.panelCustomize.Controls.Add(this.label12);
+            this.panelCustomize.Controls.Add(this.labelwelcomedevice);
+            this.panelCustomize.Controls.Add(this.labelwelcomeInfo4);
             this.panelCustomize.Controls.Add(this.btnBack);
             this.panelCustomize.Controls.Add(this.btnSave);
             this.panelCustomize.Controls.Add(this.btnBrowse);
@@ -166,10 +180,10 @@
             resources.ApplyResources(this.panelWelcomeFirst, "panelWelcomeFirst");
             this.panelWelcomeFirst.Controls.Add(this.btnCustom);
             this.panelWelcomeFirst.Controls.Add(this.btnExpress);
-            this.panelWelcomeFirst.Controls.Add(this.label2);
+            this.panelWelcomeFirst.Controls.Add(this.labelwelcomeInfo);
             this.panelWelcomeFirst.Controls.Add(this.pictureBox2);
-            this.panelWelcomeFirst.Controls.Add(this.label11);
-            this.panelWelcomeFirst.Controls.Add(this.label3);
+            this.panelWelcomeFirst.Controls.Add(this.labelwelcomeInfo3);
+            this.panelWelcomeFirst.Controls.Add(this.labelwelcomeInfo2);
             this.panelWelcomeFirst.Name = "panelWelcomeFirst";
             // 
             // btnCustom
@@ -192,11 +206,11 @@
             this.btnExpress.UseVisualStyleBackColor = false;
             this.btnExpress.Click += new System.EventHandler(this.btnExpress_Click);
             // 
-            // label2
+            // labelwelcomeInfo
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.labelwelcomeInfo, "labelwelcomeInfo");
+            this.labelwelcomeInfo.ForeColor = System.Drawing.Color.AliceBlue;
+            this.labelwelcomeInfo.Name = "labelwelcomeInfo";
             // 
             // pictureBox2
             // 
@@ -205,23 +219,23 @@
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
-            // label11
+            // labelwelcomeInfo3
             // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label11.Name = "label11";
+            resources.ApplyResources(this.labelwelcomeInfo3, "labelwelcomeInfo3");
+            this.labelwelcomeInfo3.ForeColor = System.Drawing.Color.AliceBlue;
+            this.labelwelcomeInfo3.Name = "labelwelcomeInfo3";
             // 
-            // label3
+            // labelwelcomeInfo2
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.labelwelcomeInfo2, "labelwelcomeInfo2");
+            this.labelwelcomeInfo2.ForeColor = System.Drawing.Color.AliceBlue;
+            this.labelwelcomeInfo2.Name = "labelwelcomeInfo2";
             // 
-            // label10
+            // labelwelcomeAfterRecord
             // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label10.Name = "label10";
+            resources.ApplyResources(this.labelwelcomeAfterRecord, "labelwelcomeAfterRecord");
+            this.labelwelcomeAfterRecord.ForeColor = System.Drawing.Color.AliceBlue;
+            this.labelwelcomeAfterRecord.Name = "labelwelcomeAfterRecord";
             // 
             // comboOpenFileAfter
             // 
@@ -247,11 +261,11 @@
             this.comboConfimation.TabStop = false;
             this.comboConfimation.SelectedIndexChanged += new System.EventHandler(this.comboConfimation_SelectedIndexChanged);
             // 
-            // label9
+            // labelwelcomeConfirmation
             // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label9.Name = "label9";
+            resources.ApplyResources(this.labelwelcomeConfirmation, "labelwelcomeConfirmation");
+            this.labelwelcomeConfirmation.ForeColor = System.Drawing.Color.AliceBlue;
+            this.labelwelcomeConfirmation.Name = "labelwelcomeConfirmation";
             // 
             // comboExtension
             // 
@@ -270,11 +284,11 @@
             this.comboExtension.TabStop = false;
             this.comboExtension.SelectedIndexChanged += new System.EventHandler(this.comboExtension_SelectedIndexChanged);
             // 
-            // label6
+            // labelwelcomeExtension
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label6.Name = "label6";
+            resources.ApplyResources(this.labelwelcomeExtension, "labelwelcomeExtension");
+            this.labelwelcomeExtension.ForeColor = System.Drawing.Color.AliceBlue;
+            this.labelwelcomeExtension.Name = "labelwelcomeExtension";
             // 
             // comboChannels
             // 
@@ -303,23 +317,23 @@
             this.comboOutRate.TabStop = false;
             this.comboOutRate.SelectedIndexChanged += new System.EventHandler(this.comboOutRate_SelectedIndexChanged);
             // 
-            // label8
+            // labelwelcomeSaveLocation
             // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label8.Name = "label8";
+            resources.ApplyResources(this.labelwelcomeSaveLocation, "labelwelcomeSaveLocation");
+            this.labelwelcomeSaveLocation.ForeColor = System.Drawing.Color.AliceBlue;
+            this.labelwelcomeSaveLocation.Name = "labelwelcomeSaveLocation";
             // 
-            // label7
+            // labelwelcomeChannels
             // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label7.Name = "label7";
+            resources.ApplyResources(this.labelwelcomeChannels, "labelwelcomeChannels");
+            this.labelwelcomeChannels.ForeColor = System.Drawing.Color.AliceBlue;
+            this.labelwelcomeChannels.Name = "labelwelcomeChannels";
             // 
-            // label5
+            // labelwelcomeOutRate
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label5.Name = "label5";
+            resources.ApplyResources(this.labelwelcomeOutRate, "labelwelcomeOutRate");
+            this.labelwelcomeOutRate.ForeColor = System.Drawing.Color.AliceBlue;
+            this.labelwelcomeOutRate.Name = "labelwelcomeOutRate";
             // 
             // comboDevies
             // 
@@ -332,17 +346,17 @@
             this.comboDevies.Tag = "";
             this.comboDevies.SelectedIndexChanged += new System.EventHandler(this.comboDevies_SelectedIndexChanged);
             // 
-            // label4
+            // labelwelcomedevice
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.labelwelcomedevice, "labelwelcomedevice");
+            this.labelwelcomedevice.ForeColor = System.Drawing.Color.AliceBlue;
+            this.labelwelcomedevice.Name = "labelwelcomedevice";
             // 
-            // label12
+            // labelwelcomeInfo4
             // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Name = "label12";
+            resources.ApplyResources(this.labelwelcomeInfo4, "labelwelcomeInfo4");
+            this.labelwelcomeInfo4.ForeColor = System.Drawing.Color.Red;
+            this.labelwelcomeInfo4.Name = "labelwelcomeInfo4";
             // 
             // btnBack
             // 
@@ -410,7 +424,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panelUpper;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelWelcomeTitle;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnLanguage;
@@ -420,27 +434,28 @@
         private System.Windows.Forms.Panel panelWelcomeFirst;
         private System.Windows.Forms.Button btnCustom;
         private System.Windows.Forms.Button btnExpress;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelwelcomeInfo;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labelwelcomeInfo2;
+        private System.Windows.Forms.Label labelwelcomeAfterRecord;
         private System.Windows.Forms.ComboBox comboOpenFileAfter;
         private System.Windows.Forms.ComboBox comboConfimation;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label labelwelcomeConfirmation;
         private System.Windows.Forms.ComboBox comboExtension;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelwelcomeExtension;
         private System.Windows.Forms.ComboBox comboChannels;
         private System.Windows.Forms.ComboBox comboOutRate;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelwelcomeSaveLocation;
+        private System.Windows.Forms.Label labelwelcomeChannels;
+        private System.Windows.Forms.Label labelwelcomeOutRate;
         private System.Windows.Forms.ComboBox comboDevies;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label labelwelcomedevice;
+        private System.Windows.Forms.Label labelwelcomeInfo4;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnBrowse;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label labelwelcomeInfo3;
+        private System.Windows.Forms.Button button1;
     }
 }

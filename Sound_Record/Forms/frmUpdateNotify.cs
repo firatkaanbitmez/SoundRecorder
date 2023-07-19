@@ -29,10 +29,10 @@ namespace Sound_Record.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             timer1.Interval = 1;
-            action = enmAction.close;
+            
             frmMain frm = new frmMain();
             frm.CheckForUpdates();
-           
+            action = enmAction.close;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -70,6 +70,37 @@ namespace Sound_Record.Forms
             }
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+            base.Close();
+        }
+
+        private void label2_MouseEnter(object sender, EventArgs e)
+        {
+            NotifyRemindLater.ForeColor = Color.Red; 
+
+        }
+
+        private void label2_MouseLeave(object sender, EventArgs e)
+        {
+            NotifyRemindLater.ForeColor = Color.FromArgb(0, 82, 127);
+        }
+
+        private void frmUpdateNotify_Load(object sender, EventArgs e)
+        {
+            if ("en-US" == Properties.Settings.Default.language.ToString())
+            {
+                NotifyRemindLater.Text = "Remind Me Later";
+                button1.Text = "Install Now";
+            }
+            if ("tr-TR" == Properties.Settings.Default.language.ToString())
+            {
+                NotifyRemindLater.Text = "Daha Sonra Hatırlat";
+                button1.Text = "Şimdi Yükle";
+            }
+
+        }
+
         public void showAlert(string msg)
         {
             this.Opacity = 0.0;
@@ -90,7 +121,7 @@ namespace Sound_Record.Forms
 
             }
             this.x= Screen.PrimaryScreen.WorkingArea.Width - base.Width - 1;
-            this.label1.Text = msg;
+            this.NotifyLabel.Text = msg;
             this.Show();
             this.action = enmAction.start;
             this.timer1.Interval = 1;

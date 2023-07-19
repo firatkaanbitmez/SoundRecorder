@@ -4,9 +4,11 @@ C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Sound Recorder.exe.config
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Sound Recorder.exe
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Sound Recorder.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\tr-TR\Sound Recorder.resources.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\CSAudioVisualization.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\DeltaCompressionDotNet.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\DeltaCompressionDotNet.MsDelta.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\DeltaCompressionDotNet.PatchApi.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Krypton.Toolkit.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Microsoft.Win32.Registry.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Mono.Cecil.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Mono.Cecil.Mdb.dll
@@ -20,11 +22,14 @@ C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.Midi.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.Wasapi.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.WinForms.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.WinMM.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Newtonsoft.Json.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NuGet.Squirrel.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\SharpCompress.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Squirrel.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\System.Security.AccessControl.dll
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\System.Security.Principal.Windows.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\CSCore.dll
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Krypton.Toolkit.xml
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Microsoft.Win32.Registry.xml
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Mono.Cecil.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Mono.Cecil.Mdb.pdb
@@ -32,6 +37,7 @@ C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Mono.Cecil.Pdb.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Mono.Cecil.Rocks.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.xml
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NAudio.Lame.pdb
+C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Newtonsoft.Json.xml
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\NuGet.Squirrel.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\Squirrel.pdb
 C:\Users\FIRAT\Desktop\Sound_Record\bin\Release\System.Security.AccessControl.xml
